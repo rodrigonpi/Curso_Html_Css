@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Pagina Teste</title>
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+    <body>
+        <h1>Formulário de Cadastro</h1>
+
+        <form action="login.html" method="get">
+
+            <label for="nome">
+                Nome Completo
+            </label><br/>
+            <input type="text" name="nome" id="nome"/>
+            
+            <label>
+                Descrição:<br/>
+                <textarea name="descricao"></textarea>
+            </label>
+            <br/><br/>
+
+            <label>
+                Categoria:<br/>
+                <select name="categoria">
+                    <option value="1"> Categoria 1</option>
+                    <option value="2"> Categoria 2</option>
+                    <option value="3"> Categoria 3</option>
+                    <option value="4"> Categoria 4</option>
+                    <option value="5"> Categoria 5</option>
+                </select>
+            </label>
+            <br/><br/>
+
+            <label>
+            <input type="checkbox"/>
+            Eu declaro que li e aceito os <a href="termos.html" target="_blank">termos de uso</a>
+            </label>
+            <br/><br/>
+
+            <!--Selects-->
+            <select name="ordenacao" size="2" multiple>
+                <option value="Valor">1 - Um</option>
+                <option>2 - Dois</option>
+                <option>3 - Tres</option>
+                <option>4 - Quatro</option>
+                <option>5 - Cinco</option>
+
+            </select>
+            <br/>
+            <br/>
+
+
+
+
+            <!--Tipos de Inputs-->
+            <input type="text" placeholder="texto" /> 
+            <br/><br/>
+            <input type="password" placeholder="senha" />
+            <br/><br/>
+            <input type="email" placeholder="email" />
+            <br/><br/>
+            <input type="checkbox" placeholder="check"/>
+            <br/><br/>
+            <input type="radio" name="sexo" text="Masculino"/>   
+            <input type="radio" name="sexo" text="Feminino"/> 
+            <br/><br/>  
+            <input type="color"/>  
+            <br/><br/>
+            <input type="date"/>  
+            <br/><br/>
+            <input type="datetime-local"/> 
+            <br/><br/>
+            <input type="number"/> 
+            <br/><br/>
+            <input type="range"/> 
+            <br/><br/>
+            <input type="time"/>
+            <br/><br/>
+            <input type="tel"/>  
+            <br/><br/>
+            <input type="url"/>  
+            <br/><br/>
+            <input type="week"/>  
+            <br/><br/>
+            <input type="submit"/> 
+        </form>
+
+        <h1>Area de Cadastro</h1>
+        <form>
+
+        </form>
+
+
+
+    </body>
+</html>

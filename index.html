@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pagina Inicial</title>
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="estilos/style_index.css"/>
+    </head>
+    <body>
+        <form method="post" action="teste.html" enctype="multipart/form-data">
+            <input type="hidden" name="local" value="PT"/>
+
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+                <label>
+                    Nome:<br/>
+                    <input type="text" name="nome" required minlength="3"/>
+                </label><br/>
+    
+                <label>
+                    Sobrenome:<br/>
+                    <input type="text" name="sobrenome" required  maxlength="10"/>
+                </label><br/>
+
+                <label>
+                    E-mail:<br/>
+                    <input type="text" name="email" required pattern="[^@\s]+@[^@\s]+\.[^@\s]+" title="endereço de email"/>
+                </label><br/>
+
+                <label>
+                    Idade:<br/>
+                    <input type="number" name="idade" required min="18" />
+                </label><br/>
+
+                <label>
+                    Data Nasc.:<br/>
+                    <input type="date" name="nascimento" required min="1900-07-07"/>
+                </label><br/>
+
+                <label>
+                    Foto:<br/>
+                    <input type="file" name="foto" accept="image/*"/>
+                </label><br/>
+
+
+            </fieldset>
+            
+            <fieldset>
+                <legend>Dados Profissionais</legend>
+                <label>
+                    Nome da empresa:<br/>
+                    <input type="text" name="empresanome"/>
+                </label><br/>
+    
+                <label>
+                    Cargo na empresa:<br/>
+                    <input type="text" name="empresacargo"/>
+                </label><br/>
+            </fieldset>
+
+            <input type="submit" value="Cadastrar"/>
+
+        </form>
+
+        
+
+    </body>
+</html>
